@@ -78,14 +78,65 @@ button{
 /*footer css below*/
 
 footer{
+
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 85px 20px 30px 20px;
+}
+.upper-footer{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 20px;
-    margin-right: 20px;
+    justify-content: space-between;
+}
+.flinks{
+    flex-grow: 1;
+    max-width: 150px;
+    margin: 0px 10px 0px 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-footer > div{
-    flex-grow: 1;
+.flinks > h2{
+    font-size: 24px;
+    text-decoration: underline;
+}
+.flinks > a{
+
+    color: white;
+    text-decoration:none;
+    margin: 8px 0px 8px 0px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+.lower-footer{
+    width: 100%;
+    height: 150px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    
+}
+
+/* Footer Logo CSS */
+
+
+.flogo{
+    position: relative;
+    filter: invert(100%) grayscale(100%);
+    height: 40px;
+    width: 40px;
+
+    top: 50px;
+    margin: 0px 35px 0px 35px;
+    
+}
+
+.logo-seperator{
+    position: relative;
+    padding-top: 40px;
+    top: 25px;
 }

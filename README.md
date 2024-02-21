@@ -27,4 +27,4 @@ cd better-dropbox
 
 - The original Dropbox team for creating the inspiration for this project.
 
-Thank you for checking out the "Better Dropbox" project! We hope you find it useful and welcome your contributions.
+Thank you for checking out the "Better Dropbox" project! I hope you find it as interesting and fun as I did.

@@ -1,85 +1,167 @@
-html,body,h1{
+:root{
+    --main-bg-color:#4aadd7; 
+    --light-gray-color:#f3f3f3;
+    
+}
+
+html,body,h1,h2,h3{
     margin: 0;
     padding: 0;
 }
 
 
+/*Nav Module*/
+/* Make navbar sticky for mobile version */
 nav{
     width: 100%;
-    height: 70px;
+    height:45px;
 
     display: flex;
-    position: fixed;
-    top: 0;
-    
     justify-content: space-between;
 
-    background-color: blue;
+    background-color: var(--main-bg-color);
 }
 .left-nav{
-    padding-left: 25px;
+    padding-left: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .right-nav{
-    padding-right: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
+.nav-a{
+    font-size: 12px;
+    padding-right:16px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.nav-a:hover{
+    text-decoration: none;
+}
 .logo{
-    height: 40px;
-    mix-blend-mode: multiply;  /* removes background form logo */
+    height: 19px;
 }
 .logo-title{
-    padding: 10px;
+    padding: 5px;
     font-size: 20px;
     font-weight: 700;
     font-family: 'Times New Roman', Times, serif;
-    color: antiquewhite;
+    color: white;
 }
 
-button{
-    margin: 10px;
-}
-
-/*Navbar css above*/
-
+/*Main Section Module*/
 .main{
     width: 100%;
-    height: 700px;
-
-    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    background-color: white;
 }
+    .main-area{
+        width: 200px;
+        height: 370px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        position: relative;
+        left: 20px;
+
+        /* border: 1px solid black; */
+    }
+    .main-title{
+        font-size:35px ;
+    }
+    .main-area > h2{
+        font-size: 13px;
+    }
+    .main-img{
+        width:130px;
+
+        /* border: 1px solid black; */
+    }
+    .lsbutton{
+        margin-top: 15px;
+        padding: 7px 9px;
+        color: white;
+        background-color: #000;
+        border: none;
+        border-radius: 10%;
+    }
+    .lsbutton:hover{
+        background-color: #424141;
+    }
+
+/*Flex Section Module*/
+.flex{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 40px 0px 50px 0px ;
+
+    
+
+    background-color: var(--light-gray-color);
+}
+.flex-title{
+    width: 260px;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.flex-main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.flex-col{
+    max-width: 300px;
+    margin-top: 50px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    /* border: 1px solid black; */
+}
+.flex-col > h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.flex-col > h2{
+    font-size: 23px;
+    padding: 10px 0px;
+    font-weight: 900;
+}
+.flex-col > h3{
+    font-size: 18px;
+}
+/*Price Section Module*/
 .price{
     width: 100%;
     height: 550px;
 
-    background-color: blueviolet;
-}
-.flex{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 65px 0px 65px 0px ;
-
-    align-items: center;
-    justify-content: center;
-
-    background-color: brown;
+    background-color: rgb(128, 135, 138);
 }
 
-
-
-
-/*footer css below*/
+/*footer Module*/
 footer{
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: #000;
     color: white;
 }
 .footer-container{
@@ -87,25 +169,24 @@ footer{
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 85px 20px 30px 20px;
+    padding: 75px 20px 30px 20px;
 }
 .upper-footer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .flinks{
     flex-grow: 1;
-    max-width: 150px;
+    max-width: 140px;
     width: 100%;
-    margin: 0px 10px 0px 10px;
+    margin: 19px 10px 0px 10px;
     display: flex;
     flex-direction: column;
 }
 
-.flinks > h2{
+.flinks > h2{                       /*use contrasting fonts for footer h2 and a tags*/
     font-size: 24px;
-    text-decoration: underline;
 }
 .flinks > a{
 
@@ -131,9 +212,9 @@ a:hover{
 
 .flogo{
     position: relative;
-    height: 40px;
-    width: 40px;
-
+    height: 35px;
+    width: 35px;
+    filter: invert(100%);
     top: 50px;
     margin: 0px 35px 0px 35px;
     

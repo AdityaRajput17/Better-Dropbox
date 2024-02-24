@@ -19,6 +19,8 @@ nav{
     display: flex;
     justify-content: space-between;
 
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+
     background-color: var(--main-bg-color);
 }
 .left-nav{
@@ -38,14 +40,17 @@ nav{
     padding: 6px;
     text-decoration: none;
     color: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .nav-a:hover{
     text-decoration: none;
 }
-.signup{
-    border: 1px solid white;
+.signup{                                                                /*shadow*/
+    border: 1px solid var(--main-bg-color);
+    color: var(--main-bg-color);
+    background-color: white;
     border-radius: 10%;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px;
 }
 .logo{
     height: 19px;
@@ -54,7 +59,7 @@ nav{
     padding: 5px;
     font-size: 17px;
     font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
 }
 
@@ -64,11 +69,10 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* border: 1px solid black; */
     background-color: white;
 }
     .main-area{
-        width: 200px;
+        width: 240px;
         height: 370px;
         display: flex;
         flex-direction: column;
@@ -77,14 +81,22 @@ nav{
 
         position: relative;
         left: 20px;
-
+        
         /* border: 1px solid black; */
     }
     .main-title{
         font-size:35px ;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 1;
+        text-shadow: 4px 5px 4px rgba(196, 196, 196, 0.45);
     }
     .main-area > h2{
         font-size: 13px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        margin-top: 7px;
+        color: #2e2f33;
     }
     .main-img{
         width:130px;
@@ -92,12 +104,14 @@ nav{
         /* border: 1px solid black; */
     }
     .lsbutton{
-        margin-top: 15px;
+        margin-top: 10px;
         padding: 7px 9px;
         color: white;
         background-color: #000;
         border: none;
         border-radius: 10%;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        font-family: "Josefin Slab", serif;
     }
     .lsbutton:hover{
         background-color: #424141;
@@ -112,22 +126,26 @@ nav{
     justify-content: center;
     flex-direction: column;
 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     padding: 40px 0px 50px 0px ;
-
+    
     
 
     background-color: var(--light-gray-color);
 }
 .flex-title{
-    width: 260px;
+    width: 100%;
     font-size: 22px;
     text-align: center;
+    text-shadow: 4px 5px 4px rgba(196, 196, 196, 0.45);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
 }
 .flex-main{
     display: flex;
-    align-items: center;
+    justify-content: space-around;
     flex-direction: column;
-    width: 100%;
+    position: relative;
 }
 .flex-col{
     max-width: 300px;
@@ -135,27 +153,36 @@ nav{
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 
     /* border: 1px solid black; */
 }
 .flex-col > h1{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    width: 100%;
     font-size: 30px;
 }
 .flex-col > h2{
-    font-size: 23px;
+    width: 100%;
+    font-size: 17px;
     padding: 10px 0px;
-    font-weight: 900;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    
 }
 .flex-col > h3{
-    font-size: 18px;
+    width: 100%;
+    font-size: 13px;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    
 }
 
 /*Feats Section Module*/
 .feats{
-    background-color: #1e1919;
+    background-color: #1e1919;  
 
     display: flex;
     align-items: center;
@@ -179,17 +206,18 @@ nav{
     align-items: flex-start;
     justify-content: center;
 }
-.feat-col > h1{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-}
 .feat-col > h2{
     font-size: 23px;
     padding: 10px 0px;
-    font-weight: 900;
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
 }
 .feat-col > h3{
-    font-size: 18px;
+    font-size: 13px;
+
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
 }
 
 /*Price Section Module*/
@@ -232,12 +260,18 @@ footer{
 .flinks > h2{                       /*use contrasting fonts for footer h2 and a tags*/
     font-size: 24px;
     margin-bottom: 15px;
+
+    font-family: sans-serif;
+    font-weight: 200;
 }
 .flinks > a{
     font-size: 15px;
     color: white;
     text-decoration:none;
     margin: 8px 0px 8px 0px;
+
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a:hover{
@@ -276,7 +310,7 @@ a:hover{
     .price{
         display:none;
     }
-    
+
 }
 
 @media (width <= 768px) and (width > 480px)    /* tablets */
@@ -304,7 +338,7 @@ a:hover{
         gap: 15px;
     }
     .main-area{
-        width: 340px;
+        width: 380px;
         height: 450px;
     }
     .main-title{
@@ -392,7 +426,7 @@ a:hover{
         gap: 20px;
     }
     .main-area{
-        width: 370px;
+        width: 450px;
         height: 530px;
     }
     .main-title{
@@ -449,8 +483,9 @@ a:hover{
     .feat-col{
         max-width: 260px;
 
-        background-color: #292525;
-        border: 2px solid rgb(110, 109, 114);
+        background-color: #211c1c;
+        /* border: 2px solid rgb(110, 109, 114); */
+        box-shadow: 0px 0px 10px 20px rgba(33, 28, 28, 0.81);
         padding: 20px;
         border-radius: 5%;
     
@@ -509,7 +544,7 @@ nav{
     gap: 190px;
 }
 .main-area{
-    width: 550px;
+    width: 750px;
     height: 800px;
 }
 .main-title{
@@ -573,7 +608,7 @@ nav{
     max-width: 500px;
 
     background-color: #292525;
-    border: 2px solid rgb(110, 109, 114);
+    box-shadow: 0px 0px 10px 20px rgba(33, 28, 28, 0.81);
     padding: 40px;
     border-radius: 5%;
 
@@ -630,7 +665,7 @@ nav{
     gap: 190px;
 }
 .main-area{
-    width: 550px;
+    width: 800px;
     height: 800px;
 }
 .main-title{
@@ -694,7 +729,7 @@ nav{
     max-width: 500px;
 
     background-color: #292525;
-    border: 2px solid rgb(110, 109, 114);
+    box-shadow: 0px 0px 10px 20px rgba(33, 28, 28, 0.81);
     padding: 40px;
     border-radius: 5%;
 

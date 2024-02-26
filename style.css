@@ -45,13 +45,11 @@ nav{
 .nav-a:hover{
     text-decoration: none;
 }
-.signup{                                                                /*shadow*/
+.signup{                                                            
     border: 1px solid var(--main-bg-color);
     color: var(--main-bg-color);
     background-color: white;
     border-radius: 10%;
-    
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.432);
 }
 .logo{
     height: 19px;
@@ -79,9 +77,7 @@ nav{
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        background-color: rgba(255, 255, 255, 0.644);
-
-        backdrop-filter: opacity(10%);
+        background-color: rgba(255, 255, 255, 0.705);
         position: relative;
         left: 20px;
         z-index: 1;
@@ -105,7 +101,7 @@ nav{
         position: absolute;
         width:310px;
         z-index: 0;
-        opacity: 40%;
+        opacity: 70%;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         /* border: 1px solid black; */
     }
@@ -337,7 +333,7 @@ a:hover{
     }
     .main-img{
         width:420px;
-        opacity: 60%;
+        opacity: 70%;
     }
     .lsbutton{
         font-size: 13px;
@@ -577,7 +573,7 @@ a:hover{
     .main-img{
         width:900px;
         position: relative;
-        opacity: 72%;
+        opacity: 80%;
         bottom: 30px;
     }
     .lsbutton{

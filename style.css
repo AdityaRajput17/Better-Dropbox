@@ -1,5 +1,5 @@
 :root{
-    --main-bg-color:black; 
+    --main-bg-color:rgba(0, 0, 0, 0.842); 
     --light-gray-color:#f3f3f3;
     
 }
@@ -51,7 +51,7 @@ nav{
     background-color: white;
     border-radius: 10%;
     
-    box-shadow: rgba(250, 250, 250, 0.2) 0px 7px 29px 0px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.432);
 }
 .logo{
     height: 19px;

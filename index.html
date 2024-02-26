@@ -28,8 +28,8 @@
             <span class="logo-title">Dropbox</span>
         </div>
         <div class="right-nav">
-            <a class="nav-a" href="#">Login</a>
-            <a class="nav-a signup" href="#">Sign up</a>
+            <a class="nav-a" href="https://www.dropbox.com/login">Login</a>
+            <a class="nav-a signup" href="https://www.dropbox.com/register">Sign up</a>
 
         </div>
     </nav>
@@ -40,7 +40,7 @@
         <div class="main-area">
             <h1 class="main-title">Store Your Files And Forget</h1>
             <h2>Access Files. Anytime. Anywhere.</h2>
-            <button class="lsbutton">Get started</button>
+            <button onclick="redirectToDropbox()" class="lsbutton">Get started</button>
         </div>
 
         <img class="main-img" src="assets/dropbox-ui.png" alt="phone image">
@@ -183,6 +183,12 @@
         </div>
     </footer>
 
+    <script>
+        function redirectToDropbox() {
+          // Redirect to the URL when the button is pressed
+          window.location.href = "https://www.dropbox.com/plans";
+        }
+      </script>
 </body>
 
 </html>

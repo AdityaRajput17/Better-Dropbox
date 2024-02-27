@@ -298,6 +298,16 @@ a:hover{
     top: 25px;
 }
 
+@media (-webkit-device-pixel-ratio: 1.25){
+    :root{
+        zoom:0.8;
+    }
+}
+@media (-webkit-device-pixel-ratio: 1.5){
+    :root{
+        zoom:0.7;
+    }
+}
 @media (width <= 1100px) and (width > 480px)    /* tablets */
 {
    
@@ -417,7 +427,8 @@ a:hover{
     .main{
         justify-content: center;
         gap: 30px;
-        height: 1010px;
+        height: 100%;
+        overflow: hidden;
     }
     .main-area{
         width: 800px;

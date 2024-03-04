@@ -1,8 +1,8 @@
-# Better Dropbox
+# Better Dropbox UI
 
 ## Project Overview
 
-Welcome to the "Better Dropbox" project! This repository is an attempt to enhance the user interface (UI) and user experience (UX) of the original Dropbox landing page. The goal is to create a more aesthetic and modern design using HTML and CSS.
+Welcome to the "Better Dropbox UI" project! This repository is an attempt to enhance the user interface (UI) and user experience (UX) of the original Dropbox landing page. The goal is to create a more aesthetic and modern design using HTML and CSS.
 
 ## Features
 
@@ -18,13 +18,8 @@ Welcome to the "Better Dropbox" project! This repository is an attempt to enhanc
 
 To view the Better Dropbox landing page, simply open the `index.html` file in a web browser. You can also explore the project structure and review the HTML and CSS files to understand the implementation details.
 
-```bash
-git clone https://github.com/your-username/better-dropbox.git
-cd better-dropbox
-```
-
 ## Acknowledgments
 
 - The original Dropbox team for creating the inspiration for this project.
 
-Thank you for checking out the "Better Dropbox" project! I hope you find it as interesting and fun as I did.
+Thank you for checking out the "Better Dropbox UI" project! I hope you find it as interesting and fun as I did.
